@@ -42,6 +42,8 @@ module Anemone
       :depth_limit => false,
       # number of times HTTP redirects will be followed
       :redirect_limit => 5,
+      # Allow redirects to different domains (consider somecompany.com redirects to some-company.com, for example)
+      :allow_foreign_redirects => false,
       # storage engine defaults to Hash in +process_options+ if none specified
       :storage => nil,
       # Hash of cookie name => value to send with HTTP requests
